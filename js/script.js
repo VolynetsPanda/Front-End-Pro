@@ -72,7 +72,7 @@
 // lastIndexOf
 // var test = arr.lastIndexOf(10, 4)
 // console.log('arr => ', arr, 'test => ', test)
-var arr = [ 45, 23, 10, 4, 100, 10, false, 'vasya', 'fedya', 'petya'];
+
 // sort
 // arr.sort(function (a, b){
 //     // console.log(a, b)
@@ -91,7 +91,91 @@ var arr = [ 45, 23, 10, 4, 100, 10, false, 'vasya', 'fedya', 'petya'];
 // var test = arr.includes('dss')
 // console.log('arr => ', arr, 'test => ', test)
 
+// var arr = [ 45, 23, 10, 4, 100, 10, false, 'vasya', 'fedya', 'petya', [1, 2 ,3]];
 
+// concat
+// var test = arr.concat([34, true], 'vasya');
+// console.log('arr => ', arr, 'test => ', test)
+
+// join
+// var str = arr.join('!')
+// console.log('arr => ', arr, 'str => ', str)
+
+// find
+// var arr = [{id: 1, name: 'a'}, {id: 2, name: 'b'}, {id: 3, name: 'c'},];
+// var elem = arr.find(function (item, index){
+//     return item.id === 2
+// })
+// console.log('arr => ', arr, 'elem => ', elem)
+
+// findIndex
+// var arr = [{id: 1, name: 'a'}, {id: 2, name: 'b'}, {id: 3, name: 'c'},];
+// var elem = arr.findIndex(function (item, index){
+//     return item.id === 2
+// })
+// arr.splice(elem, 1)
+// console.log('arr => ', arr, 'elem => ', elem)
+
+// filter
+// var arr = [ 45, 23, 10, 4, 100, 10, false, 'vasya', 'fedya', 'petya', [1, 2 ,3]];
+// var test = arr.filter(function (item, index){
+//     return item > 10
+// })
+// console.log('arr => ', arr, 'test => ', test)
+// var test = [];
+// for (var i = 0; i < arr.length; i++){
+//     var item = arr[i];
+//     if(item > 10) test.push(item)
+// }
+// console.log('arr => ', arr, 'test => ', test)
+
+// forEach
+// var arr = [ 45, 23, 10, 4, 100, 10, false, 'vasya', 'fedya', 'petya', [1, 2 ,3]];
+// arr.forEach(function (item, index){
+//     return item + index
+// })
+// console.log('arr => ', arr)
+
+// map
+// var arr = [ 45, 23, 10, 4, 100, 10, false, 'vasya', 'fedya', 'petya', [1, 2 ,3]];
+// var test = arr.map(function (item, index){
+//     return item > 0 ? item * 2 : index
+// })
+// console.log('arr => ', arr, 'test => ', test)
+
+// reduce
+// var arr = [
+//     {name: 'a', age: 19},
+//     {name: 'b', age: 18},
+//     {name: 'c', age: 18},
+//     {name: 'h', age: 20},
+//     {name: 'f', age: 19},
+// ];
+// var test = arr.reduce(function (acc, item, index){
+//     console.log(acc, item.age, acc[item.age])
+//     if(!acc[item.age]){
+//         acc[item.age] = [item.name]
+//     } else {
+//         acc[item.age].push(item.name)
+//     }
+//     return acc
+// }, {})
+// console.log('arr => ', arr, 'test => ', test)
+
+var arr = [ 45, 23, 10, 4, 100, 10, false, 'vasya', 'fedya', 'petya', [1, 2 ,3]];
+var test = [];
+for (var i = 0; i < arr.length; i++){
+    var item = arr[i];
+    if(Array.isArray(item)){
+        for (var j = 0; j < item.length; j++){
+            var elem = arr[i][j];
+            test.push(elem);
+        }
+    } else {
+        test.push(item);
+    }
+}
+console.log('arr => ', arr, 'test => ', test)
 
 
 
