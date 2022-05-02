@@ -47,19 +47,19 @@
 //     return (n <= 1) ? n : fibonacci(n - 1) + fibonacci(n - 2)
 // }
 // console.log(fibonacci(10))
-// function flatten(arr){
-//     var result = [];
-//     for (var i = 0; i < arr.length; i++){
-//         var elem = arr[i];
-//         if(Array.isArray(elem)){
-//             result.push(flatten(elem))
-//         } else {
-//             result.push(elem)
-//         }
-//     }
-//     return result
-// }
-// console.log(flatten([3, [4, [5, [6]]], 'test', [true]]))
+function flatten(arr){
+    var result = [];
+    for (var i = 0; i < arr.length; i++){
+        var elem = arr[i];
+        if(Array.isArray(elem)){
+            result = result.concat(flatten(elem))
+        } else {
+            result.push(elem)
+        }
+    }
+    return result
+}
+console.log(flatten([3, [4, [5, [6]]], 'test', [true]]))
 //
 // var objCourse = {
 //     'vasya': {
