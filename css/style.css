@@ -1,1 +1,10 @@
-
+body{
+    background: #000000e3;
+}
+#block{
+    padding: 20px;
+    background: red;
+    position: fixed;
+    left: 0;
+    top: 10px;
+}
