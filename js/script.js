@@ -76,28 +76,30 @@
 //         block.hidden = true
 //     }
 // })
-// var fields = ['a', 'b', 'c', 'd']
-// function createBtn(tag, clName, text){
-//     var btn = document.createElement(tag);
-//     btn.className = clName;
-//     btn.innerHTML = text;
-//     btn.setAttribute('data-id', text)
-//     var wrap = document.querySelector('.wrap');
-//     wrap.append(btn)
-// }
-// for (var i = 0; i<fields.length; i++) {
-//     for(var j = 0; j<fields.length; j++) {
-//         createBtn('button', 'btn', i + 1 + fields[i])
-//     }
-// }
-// var wrap = document.querySelector('.wrap');
-// document.addEventListener('click', function (e){
-//     var elem = e.target;
-//     var check = elem.matches('.btn');
-//     if (check) {
-//         console.log(elem.dataset.id)
-//     }
-// })
+var fields = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+var col = 0
+function createBtn(tag, clName, text){
+    var btn = document.createElement(tag);
+    btn.className = clName;
+    btn.innerHTML = text;
+    btn.setAttribute('data-id', text)
+    var wrap = document.querySelector('.wrap');
+    wrap.append(btn)
+}
+for (var i = 0; i<fields.length; i++) {
+    for(var j = 0; j<fields.length; j++) {
+        createBtn('button', 'btn', `${j + 1}-${fields[i]} (${col})`)
+        col++;
+    }
+}
+var wrap = document.querySelector('.wrap');
+document.addEventListener('click', function (e){
+    var elem = e.target;
+    var check = elem.matches('.btn');
+    if (check) {
+        console.log(elem.dataset.id)
+    }
+})
 
 
 
