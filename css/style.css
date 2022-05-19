@@ -1,3 +1,38 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background: #000000e3;
 }
+.btn{
+    background: #b3790d;
+    border: none;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    /*margin-bottom: 10px;*/
+    margin: 5px;
+}
+span{
+    background: #f5c05f;
+}
+.wrap{
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #000;
+}
+.block{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    /*display: none;*/
+}
+/*.block.active{*/
+/*    display: block;*/
+/*}*/
