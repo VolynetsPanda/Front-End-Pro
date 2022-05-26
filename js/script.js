@@ -171,21 +171,101 @@
 // function setTextCount(){
 //     count.innerHTML = text.value.length
 // }
-var step = 10;
-document.addEventListener('keydown', function (e){
-    var car = document.querySelector('.car');
-    var wCar = car.getBoundingClientRect().width;
-    var lCar = car.getBoundingClientRect().left;
-    var tCar = car.getBoundingClientRect().top;
-    if(e.code === "KeyD"){
-        console.log(window.innerWidth, lCar)
-        car.style.left = lCar >= window.innerWidth - wCar - step
-            ? window.innerWidth - wCar + 'px'
-            : lCar + step + 'px'
-        car.style.transform = 'rotate(180deg)';
-    } else if(e.code === "KeyA"){
-        car.style.left = lCar < 0 ? 0 + 'px' : lCar - step + 'px'
-        car.style.transform = 'rotate(0deg)';
-    }
+// var step = 10;
+// document.addEventListener('keydown', function (e){
+//     var car = document.querySelector('.car');
+//     var wCar = car.getBoundingClientRect().width;
+//     var lCar = car.getBoundingClientRect().left;
+//     var tCar = car.getBoundingClientRect().top;
+//     if(e.code === "KeyD"){
+//         console.log(window.innerWidth, lCar)
+//         car.style.left = lCar >= window.innerWidth - wCar - step
+//             ? window.innerWidth - wCar + 'px'
+//             : lCar + step + 'px'
+//         car.style.transform = 'rotate(180deg)';
+//     } else if(e.code === "KeyA"){
+//         car.style.left = lCar < 0 ? 0 + 'px' : lCar - step + 'px'
+//         car.style.transform = 'rotate(0deg)';
+//     }
+// })
+// window.addEventListener('scroll', function (e){
+//     console.log(scrollY + innerHeight)
+// })
 
-})
+// document.addEventListener('DOMContentLoaded', function (e){
+//     var car = document.querySelector('.car')
+//     console.log('1', document.readyState)
+//     console.log(car)
+//     console.log('2', document.readyState)
+//     console.log(car.getBoundingClientRect().width)
+//     console.log('2', document.readyState)
+// })
+// window.addEventListener('load', function (e){
+//     console.log('test')
+//     var car = document.querySelector('.car')
+//     console.log('1', document.readyState)
+//     console.log(car)
+//     console.log('2', document.readyState)
+//     console.log(car.getBoundingClientRect().width)
+//     console.log('2', document.readyState)
+// })
+// window.onload = function (){
+//     console.log('test')
+// }
+
+// FORMS
+// var testForm = document.forms
+// console.log(testForm)
+//
+// var testForm2 = document.querySelectorAll('form')
+// console.log(testForm2)
+//
+// document.body.insertAdjacentHTML(
+//     "beforeend",
+//     '<form action="" name="aaaa"></form>'
+// )
+//
+// Array.prototype.slice.call(testForm).forEach(function (elem) {
+//     console.log(elem)
+// })
+var testForm = document.forms.testForm
+var elem = testForm.select
+// // // elem.value = 'sdsasdas'
+// // console.log(elem.options)
+// // console.log(elem.options[elem.selectedIndex].value)
+// Array.prototype.slice.call(elem.options).forEach(function (elem) {
+//     console.log(elem.value, elem.text)
+//     // if(elem.value == 10) elem.selected = true
+// })
+// console.log(elem.options)
+// var myOption = new Option('Galya', '10000', false, false)
+//
+// elem.append(myOption)
+// var arr = Array.from(elem.options)
+//     .filter(function (item ){
+//         return item.selected
+//     }).map(function (item){
+//         return item.text
+//     })
+// console.log(arr)
+
+// var pl1 = [1,2,3],
+//     pl2 = [],
+//     win = [
+//         [1,2,3],
+//         [4,5,6],
+//         [7,8,9],
+//         [1,4,7],
+//         [2,5,8],
+//         [3,6,9],
+//         [1,5,9],
+//         [3,5,7]
+//     ];
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #000000e3;
+    /*background: #000000e3;*/
 }
 .btn{
     text-align: center;
@@ -22,6 +22,7 @@ span{
 }
 .wrap{
     width: 660px;
+    height: 2000px;
     padding: 10px;
     display: flex;
     flex-direction: column;

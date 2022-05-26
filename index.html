@@ -9,21 +9,37 @@
     <title>Java script (ES5)</title>
 </head>
 <body>
-<img src="./img/car.jpeg" alt="" class="car">
-<!--<div class="wrap">-->
-<!--    <button class="btn">-->
-<!--        <span>click me!</span>-->
-<!--    </button>-->
-<!--    <div class="block">-->
-<!--        <span>click me!</span>-->
-<!--        <span>click me!</span>-->
-<!--        <span>click me!</span>-->
-<!--        <span>click me!</span>-->
-<!--        <p class="x">0</p>-->
-<!--        <p class="y">0</p>-->
-<!--    </div>-->
-<!--    <textarea class="text">Vasya</textarea>-->
-<!--    <p class="count">0</p>-->
-<!--</div>-->
+<form action="#" name="testForm">
+    <div>
+        <label>input text</label>
+        <input name="text" type="text" value="test vasya!!!!">
+    </div>
+    <div>
+        <label>input textarea</label>
+        <textarea tabindex="3" name="textarea" cols="30" rows="10">dfsfdsfds</textarea>
+    </div>
+    <div>
+        <label>radio 1</label>
+        <input tabindex="2" name="radio" type="radio">
+        <label>radio 2</label>
+        <input tabindex="2" name="radio" checked type="radio">
+    </div>
+    <div>
+        <label>checkbox 1</label>
+        <input name="checkbox" type="checkbox">
+        <label>checkbox 2</label>
+        <input name="checkbox" type="checkbox">
+    </div>
+    <div>
+        <label>file</label>
+        <input tabindex="4" type="file" name="file">
+    </div>
+    <select multiple name="select">
+        <option value="1" selected>Vasya</option>
+        <option value="10">Petya</option>
+        <option value="100" selected>Fedya</option>
+    </select>
+    <input type="submit">
+</form>
 </body>
 </html>
