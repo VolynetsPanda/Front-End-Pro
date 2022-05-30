@@ -228,8 +228,7 @@
 // Array.prototype.slice.call(testForm).forEach(function (elem) {
 //     console.log(elem)
 // })
-var testForm = document.forms.testForm
-var elem = testForm.select
+
 // // // elem.value = 'sdsasdas'
 // // console.log(elem.options)
 // // console.log(elem.options[elem.selectedIndex].value)
@@ -262,10 +261,67 @@ var elem = testForm.select
 //         [3,5,7]
 //     ];
 
-
-
-
-
-
+// var testForm = document.forms.testForm
+// var input = testForm.select
+// var placeholder = input.placeholder
+// input.addEventListener('focus', function (e){
+//     input.placeholder = ''
+//     console.log(placeholder)
+// })
+// input.addEventListener('blur', function (e){
+//     input.placeholder = placeholder
+//     console.log('test blur')
+// })
+// input.addEventListener('input', function (e){
+//     console.log(input.value)
+// })
+// input.addEventListener('change', function (e){
+//     console.log(input.value)
+// })
+// input.addEventListener('change', function (e){
+//     console.log(input.value)
+// })
+// var testForm = document.forms.testForm
+// var input = testForm.textarea
+// input.addEventListener('copy', function (e){
+//     e.preventDefault()
+//     console.log('copy')
+// })
+// input.addEventListener('paste', function (e){
+//     e.preventDefault()
+//     console.log('paste')
+// })
+// input.addEventListener('cut', function (e){
+//     console.log('cut')
+// })
+// var testForm = document.forms.testForm
+// var error = document.getElementById('error')
+// testForm.addEventListener('submit', function (e){
+//     e.preventDefault();
+//     var msg = []
+//     console.log('loading....')
+//     if(!testForm.text.value){
+//         msg.push('error input')
+//     }
+//     if (msg.length > 0){
+//         console.log(msg)
+//         error.innerHTML = msg.join(', ')
+//         return false
+//     }
+// })
+// var testForm = document.forms.testForm
+// var input = testForm.text
+// input.addEventListener('change', function (e){
+//     testForm.submit()
+// })
+// var testForm = document.forms.testForm
+// var file = testForm.file
+// file.addEventListener('change', function (e){
+//     var pic = file.files[0]
+//     var url = URL.createObjectURL(pic)
+//     var img = document.createElement('img')
+//     img.src = url
+//     testForm.append(img)
+// })
 
 
