@@ -1,0 +1,32 @@
+{
+  "user-1": {
+    "name": "Vasya",
+    "age": 40,
+    "working": true,
+    "id": 1
+  },
+  "user-2": {
+  "name": "Vasya 2",
+  "age": 10,
+  "working": true,
+  "id": 2
+  },
+    "user-3":{
+  "name": "Vasya 3",
+  "age": 20,
+  "working": false,
+  "id": 3
+  },
+    "user-4":{
+  "name": "Vasya 222",
+  "age": 210,
+  "working": false,
+  "id": 4
+  },
+    "user-5":{
+  "name": "Vasya 22223",
+  "age": 330,
+  "working": false,
+  "id": 5
+  }
+}
