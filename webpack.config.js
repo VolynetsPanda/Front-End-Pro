@@ -52,7 +52,9 @@ module.exports = {
         extensions: ["*", ".js", ".jsx", ".scss"],
         alias: {
             components: path.resolve(__dirname, 'src/components'),
-            helpers: path.resolve(__dirname, 'src/helpers'),
+            helper: path.resolve(__dirname, 'src/helper'),
+            views: path.resolve(__dirname, 'src/views'),
+            styles: path.resolve(__dirname, 'src/styles'),
         }
     },
     plugins: [
