@@ -5,7 +5,8 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-body{
-    background: url("../../img/Grosser_Panda.jpeg") #000000e3;
-    height: 10000px;
+.mdc-slider .mdc-slider__track--active_fill {
+    border-color: red !important;
+    border-color: var(--mdc-theme-primary, red);
 }
+
