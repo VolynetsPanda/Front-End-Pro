@@ -1,9 +1,10 @@
 class ControlBall{
-    constructor() {
-        this.lvl = new Level().getLvl();
-        this.size = 100 / Number(`1.${this.lvl}`);
-        this.speed = 5 * this.lvl;
+    constructor(score, live) {
+        this.size = 100 ;
+        this.speed = 5;
         this.interval = 50;
+        this.score = score;
+        this.live = live;
     }
     init(){
         this.generateBall();
@@ -12,7 +13,7 @@ class ControlBall{
     generateBall(){
         this.ball = new Ball(this.size, this.generateX())
         this.ball.addEventListener('click', () => {
-            this.lvl.addCount()
+            this.score.addScore();
             this.destroy();
         })
     }
@@ -29,6 +30,7 @@ class ControlBall{
             y += this.speed;
             this.ball.style.top = `${y}px`;
             if(y > window.innerHeight - this.size){
+                this.live.updateLive()
                 clearInterval(this.moveInterval)
                 this.destroy()
             }
